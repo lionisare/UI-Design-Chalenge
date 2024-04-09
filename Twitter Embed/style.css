@@ -1,0 +1,126 @@
+:root {
+  --bg-color: #ecf8ff;
+  --box-color: #ffffff;
+  --bg-color-2: #141d26;
+  --box-color-2: #243447;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+  transition: 0.3s ease-in-out;
+}
+body.active {
+  transition: 0.3s ease-in-out;
+  background-color: var(--bg-color-2);
+}
+body.active .box-background {
+  background-color: var(--box-color-2);
+}
+body.active .box-background .text h3 {
+  color: #fff;
+}
+body.active .box-background .text p {
+  color: #fff;
+}
+body.active .box-background .center p {
+  color: #fff;
+}
+body.active .box-background .bottom {
+  color: #fff;
+}
+body.active #darkmode {
+  background-color: #000;
+  color: yellow;
+}
+.container {
+  width: 100%;
+  height: 100%;
+}
+.box-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 25px;
+  width: 570px;
+  height: 200px;
+  background-color: var(--box-color);
+  border-radius: 10px;
+}
+.box-background .top {
+  display: flex;
+}
+.box-background .top img {
+  width: 10%;
+  height: 30%;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.box-background .text {
+  margin-left: 20px;
+  flex-direction: column;
+}
+.box-background .text h3 {
+  color: #000000;
+  font-size: 18px;
+}
+.box-background .text p {
+  color: #000000;
+  font-size: 14px;
+}
+.box-background .top .twiter-ikon {
+  color: #1da1f2;
+  font-size: 30px;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+}
+.box-background .center {
+  margin-top: 16px;
+}
+.box-background .center p {
+  font-size: 15px;
+}
+.box-background .center p span {
+  font-size: 15px;
+  color: #1da1f2;
+}
+.box-background .bottom {
+  margin-top: 16px;
+  display: flex;
+}
+.box-background .bottom .heart {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 26px;
+}
+.box-background .bottom span {
+  font-size: 16px;
+  margin-left: 10px;
+}
+.box-background .bottom p {
+  margin-left: 25px;
+  font-size: 16px;
+}
+#darkmode {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  padding: 15px 20px;
+  transform: translate(-50%, -50%);
+  background-color: var(--bg-color-2);
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+#darkmode:hover {
+  background-color: #23272c;
+}
