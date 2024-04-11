@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+    <title>Holadok</title>
+    <!-- remix icon cdn  -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- css link  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- =====navbar & header=====  -->
+    <header class="header" id="header">
+        <nav class="navbar container" id="navbar">
+            <a href="#" class="navbar__logo">
+                <img src="images/logo.svg" class="logo__img" alt="logo">
+                Holadok
+            </a>
+            <div class="navbar__menu" id="navbar-menu">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Features</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">Blog</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link">About Us</a>
+                    </li>
+                </ul>
+                <!-- ===btn close===  -->
+                <div class="btn__close" id="btn-close">
+                    <i class="ri-close-line close-ikon"></i>
+                </div>
+            </div>
+            <div class="navbar__button">
+                <a href="#" class="login__link">Login</a>
+                <a href="#" class="book__link">Book Now</a>
+                <div class="btn__menu" id="btn-menu">
+                    <i class="ri-menu-line menu-ikon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- =====main=====  -->
+    <main class="main" id="main">
+        <!-- =====home=====  -->
+        <section class="home" id="home">
+            <div class="home__container container grid">
+                <div class="home__image-bg">
+                    <img src="./images/doctor.svg" alt="image" class="home__img">
+                </div>
+                <div class="home__data">
+                    <h1 class="home__title">
+                        Get the healthcare <br> you need, when you<br> need it.
+                    </h1>
+                    <p class="home__decription">
+                        Manage all of your healthcare needs in one convenient place – from booking appointments to
+                        tracking your health history.
+                    </p>
+                    <a href="#" class="home__btn">Book an Appointment</a>
+                </div>
+            </div>
+            <div class="home__testimoni">
+                <div class="home__testimoni-content">
+                    <img src="./images/profile.svg" alt="image" class="testimoni__img">
+                    <h3 class="testimoni__name">Jane Doe</h3>
+                    <img src="./images/tanda.svg" alt="image" class="img__koma">
+                </div>
+                <p class="testimoni__decription">"The doctor appointment app has been great for me. Scheduling
+                    appointments and getting medication reminders is much easier, and I love the option for virtual
+                    consultations. I'd recommend this app to others.”
+                </p>
+            </div>
+            <div class="home__about container">
+                <div class="home__content grid">
+                    <div class="home__row">
+                        <div class="home__item">
+                            <img src="./images/kalender.svg" alt="image" class="about__img">
+                            <h3 class="home__about-title">Online appointment scheduling</h3>
+                        </div>
+                        <p class="home__about-desc">Allows users to schedule appointments with their healthcare
+                            provider through the app.</p>
+                    </div>
+                    <div class="home__row">
+                        <div class="home__item">
+                            <img src="./images/lonceng.svg" alt="image" class="about__img">
+                            <h3 class="home__about-title">Medication reminder</h3>
+                        </div>
+                        <p class="home__about-desc">Allows users to schedule appointments with their healthcare
+                            provider through the app.</p>
+                    </div>
+                    <div class="home__row">
+                        <div class="home__item">
+                            <img src="./images/camera.svg" alt="image" class="about__img">
+                            <h3 class="home__about-title">Virtual consultations</h3>
+                        </div>
+                        <p class="home__about-desc">Allows users to schedule appointments with their healthcare
+                            provider through the app.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- main js  -->
+    <script src="main.js"></script>
+</body>
+
+</html>
